@@ -6,7 +6,7 @@ from NumInvLaplace import *
 # We know that L{ 1 / (1+s) } = e^(-t) is the function that we test
 # So, our unit test is finding the inverse of f(x) = 1/(1+x)
 
-tList = np.arange(0.1, 2, 0.1) # predefined range
+tList = np.arange(0.2, 3, 0.2) # predefined range
 
 ######### Plotting the analytical inverse
 # Simply plotting exp(-t)
@@ -21,7 +21,7 @@ f = lambda x: 1 / (1+x) # The
 
 yList_numerical = []
 for t in tList:
-    y = inverseLaplace(f, t, 1)
+    y = inverseLaplace(f, t, 1, 1)
     yList_numerical.append(y)
 
 plt.subplot(2, 1, 2)

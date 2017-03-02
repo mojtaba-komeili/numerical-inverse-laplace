@@ -6,8 +6,15 @@ import scipy
 from scipy import *
 from scipy import integrate
 
-# 
+# func: the function that you want to find its inverse
+#
+# t: the time step to calculate the inverse function at
+#
+# a: any arbitrary real point that func ...
+# has no singularities to the right of it in the complex plane
+#
 # relError_tolerance: The tolerance for accuracy
+#
 # echo_out_process: A flag; set it to non-zero values to echo out the mid results.
 def inverseLaplace(func, t, a, echo_out_process = 0, relError_tolerance = 1e-8):
     boundSteps = 5.0 / t # The initial segments of integration
