@@ -34,7 +34,7 @@ def inverseLaplace(func, t, a):
         relError     = abs(abs(integIter) - abs(lastInegIter)) / (abs(lastInegIter)+1e-15)
 
     if (echo_out_process == 0):
-        print "t", t, "Calcluated with ", segmentRuns, " segments ", "Upperbound ", upperBound
-        print "Results=", integIter
+        print("t", t, "Calcluated with ", segmentRuns, " segments ", "Upperbound ", upperBound)
+        print("Results=", integIter)
 
     return integIter  
